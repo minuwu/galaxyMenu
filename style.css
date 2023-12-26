@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+.main-body{
+    background-image: url("https://usagif.com/wp-content/uploads/gify/galaxy-amazing-spinning-on-the-right-usagif.gif");
+    background-size: cover;
+    color: white;
+    height: 100vh;
+}
+.menu{
+    height: 100%;
+    width: 30%;
+    /* border: .5px solid white; */
+    position: relative;
+    left: -500px;
+    /* box-shadow: 1px 1px 3px gold; */
+    background-color: rgba(255, 255, 255, .05);
+    transition: 1.5s ease-in-out;
+}
+.menu-icon{
+    font-size: 3rem;
+    line-height: 1.5rem;
+}
+.menu .menu-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .5rem;
+    font-size: 2.5rem;
+    line-height: 1.25rem;
+    margin: .5rem;
+    padding: 1.5rem .5rem;
+    padding-left: 1.5rem;
+    box-shadow: 2px 2px 8px gold;
+}
+.menu .menu-item li{
+    font-size: 1.5rem;
+    line-height: 1.1rem;
+    padding: 1.2rem .8rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-right: .3rem;
+    border-radius: .3rem;
+}
+.menu .menu-item li i{
+    padding-right: 1rem;
+    padding-left: .6rem;
+}
+#main{
+        display: none;
+}
+.socials{
+    width: 30%;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: fixed;
+    bottom: 2px;
+}
+.socials i{
+    padding: 1.5rem;
+    margin: 1.2rem;
+    line-height: 1.5rem;
+    color: white;
+    opacity: .75;
+}
+.socials i:hover{
+    opacity: 1;
+    color: rgb(248, 204, 94);
+    transform: scale(1.1);
+}
+.menu-item ul li:hover{
+    box-shadow: 2px 2px 4px goldenrod;
+}
+
+#main:checked ~.menu{
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+.burger-menu>i{
+    position : absolute;
+    top: 30px;
+    left: 25px;
+    transition: 1.5s ease-in-out 1s;
+    
+}
+#main:checked ~.burger-menu>i{
+    display: none;
+}
