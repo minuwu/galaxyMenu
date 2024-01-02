@@ -92,3 +92,9 @@
 #main:checked ~.burger-menu>i{
     display: none;
 }
+
+@media(max-width: 768px){
+    .menu{
+        width: 100%;
+    }
+}
