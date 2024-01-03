@@ -58,7 +58,7 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
-    position: fixed;
+    position: relative;
     bottom: 2px;
 }
 .socials i{
