@@ -58,12 +58,14 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
-    position: relative;
+    position: fixed;
     bottom: 2px;
 }
 .socials i{
     padding: 1.5rem;
     margin: 1.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
     line-height: 1.5rem;
     color: white;
     opacity: .75;
@@ -95,6 +97,9 @@
 
 @media(max-width: 768px){
     .menu{
+        width: 100%;
+    }
+    .socials{
         width: 100%;
     }
 }
